@@ -26,18 +26,18 @@ cap = cv2.VideoCapture(0)
 edgetpu='0' # make it '1' if Coral Accelerator is attached and use model with 'edgetpu' name
 
 #====custom model and label files==================
-'''
+
 model_dir = 'models/custom'
 
 model = 'custom_detection_model.tflite'
 #model = 'custom_detection_model_edgetpu.tflite'
 
 label = 'custom_labels.txt'
-'''
+
 #=================================================
 
 #====pretrained model and label files==================
-
+'''
 model_dir = 'models/pretrained'
 
 model='mobilenet_ssd_v2_coco_quant_postprocess.tflite'
@@ -47,7 +47,7 @@ model='mobilenet_ssd_v2_coco_quant_postprocess.tflite'
 #model='efficientdet_lite0_edgetpu.tflite'
 
 label = 'coco_labels.txt'
-
+'''
 #=================================================
 
 model_path=os.path.join(model_dir,model)
